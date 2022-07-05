@@ -1145,6 +1145,11 @@ Ensure the default browser behavior of the `hidden` attribute.
      object-fit: cover;
 }
 
+.object-cover-scale {
+  -o-object-fit: cover;
+     object-fit: scale-down;
+}
+
 .object-left-top {
   -o-object-position: left top;
      object-position: left top;
