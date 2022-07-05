@@ -1875,6 +1875,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 24rem;
   }
 
+  .md\:h-96-gapp {
+    height: 37rem;
+  }
+
   .md\:max-w-3xl {
     max-width: 48rem;
   }
@@ -2028,6 +2032,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:h-full {
     height: 100%;
+  }
+
+  .lg\:h-full-gapp {
+    height: 90%;
   }
 
   .lg\:w-0 {
