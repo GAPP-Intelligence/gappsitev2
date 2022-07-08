@@ -1411,6 +1411,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(10 50 84 / var(--tw-text-opacity));
 }
 
+.bg-gapp{
+  --tw-text-opacity: 1;
+  background-color: rgb(10 50 84 / var(--tw-text-opacity));
+}
+
+.hover\:bg-gapp-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: #274e6f;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
