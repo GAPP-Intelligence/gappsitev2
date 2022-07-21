@@ -1311,6 +1311,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: justify;
 }
 
+.text-base-ToS {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  width: 220px;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1441,6 +1448,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-gray-700-ToS {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+  text-decoration-line: underline;
 }
 
 .text-gray-300 {
