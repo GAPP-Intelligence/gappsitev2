@@ -1311,6 +1311,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: justify;
 }
 
+.text-base-copyright {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0 auto;
+}
+
 .text-base-ToS {
   font-size: 1rem;
   line-height: 1.5rem;
