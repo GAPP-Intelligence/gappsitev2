@@ -2283,3 +2283,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1;
   }
 }
+@media (min-width: 520px) {
+  .mn-w-520\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
