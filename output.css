@@ -105,6 +105,14 @@ a {
   text-decoration: inherit;
 }
 
+.modal {
+  transition: opacity 0.25s ease;
+}
+
+body.modal-active {
+  overflow-x: hidden;
+  overflow-y: visible !important;
+}
 /*
 Add the correct font weight in Edge and Safari.
 */
