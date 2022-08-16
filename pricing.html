@@ -148,7 +148,7 @@
                   </li>
                 </ul>
                 <div class="rounded-md shadow">
-                  <a class="modal-open flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900" aria-describedby="tier-standard"> Get started </a>
+                  <a class="modal-open flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900" aria-describedby="tier-standard" onclick="addAcceptButtonLink('https://buy.stripe.com/aEUaIAdlygzQeVG7st')"> Get started </a>
                 </div>
               </div>
             </div>
@@ -219,7 +219,7 @@
                   </li>
                 </ul>
                 <div class="rounded-md shadow">
-                  <a class="modal-open flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900" aria-describedby="tier-standard"> Get started </a>
+                  <a class="modal-open flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900" aria-describedby="tier-standard" onclick="addAcceptButtonLink('https://buy.stripe.com/5kA5og5T63N48xicMO')"> Get started </a>
                 </div>
               </div>
             </div>
@@ -255,12 +255,10 @@
             </div>
           </div>
         </div>
-      <!--Footer-->
       <div class="mt-5 sm:mt-6 sm:grid sm:grid-cols-2 sm:gap-3 sm:grid-flow-row-dense">
-        <button id="AcceptPrivacy" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-indigo-600 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:col-start-2 sm:text-sm">Accept</button>
-        <button class="modal-close mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:col-start-1 sm:text-sm">Cancel</button>
+        <a id="AcceptPrivacy" class="modal-close w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-gray-800 hover:bg-gray-900 text-base font-medium text-white focus:outline-none focus:ring-2 focus:ring-offset-2 sm:col-start-2 sm:text-sm">Accept</a>
+        <a class="modal-close mt-3 w-full inline-flex justify-center rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:col-start-1 sm:text-sm">Cancel</a>
       </div>
-
     </div>
   </div>
 </div>
@@ -304,6 +302,11 @@
     modal.classList.toggle('opacity-0')
     modal.classList.toggle('pointer-events-none')
     body.classList.toggle('modal-active')
+  }
+
+  function addAcceptButtonLink(link) {
+    const acceptButton = document.querySelector('#AcceptPrivacy')
+    acceptButton.setAttribute('href', link)
   }
 </script>
 
