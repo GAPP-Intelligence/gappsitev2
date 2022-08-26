@@ -2297,3 +2297,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-bottom: 8rem;
   }
 }
+
+.dropdown-content {
+  display: none;
+}
+.show {
+  display: block;
+}
